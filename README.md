@@ -1,7 +1,7 @@
 <p align='center'>
     <img src='./logo.png' width='200px' height='80px'/>
 </p>
-
+https://github.com/gwuhaolin/livego
 测试通过步骤：
 1 在手机上启动服务端，手机IP为192.168.0.109
 ./livego --flv_dir=./data --level=debug
@@ -13,7 +13,9 @@ http://192.168.0.109:8090/control/get?room=xiazemin
 
 3 手机端运行：可以看到app名还是app没变化，把房间名改成编码了
 HP-340-G3:~/Music$ ffmpeg -re -i 33bb.mp4 -c copy -f flv rtmp://192.168.0.109:1935/live/rfBd56ti2SMtYvSgD5xAV0YU99zampta7Z7S575KLkIZ9PYk
-
+4,在播放端即可用rtmp://192.168.0.109:1935/live/xiazemin
+http://192.168.0.109:7002/live/xiazemin.m3u8
+http://192.168.0.109:7001/live/xiazemin.flv
 
 [中文](./README_cn.md)
 
