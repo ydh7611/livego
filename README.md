@@ -2,6 +2,19 @@
     <img src='./logo.png' width='200px' height='80px'/>
 </p>
 
+测试通过步骤：
+1 在手机上启动服务端，手机IP为192.168.0.109
+./livego --flv_dir=./data --level=debug
+2,在电脑端运行HTTP建立房间xiazemin：APP名为live
+http://192.168.0.109:8090/control/get?room=xiazemin
+网页显示
+{"status":200,"data":"rfBd56ti2SMtYvSgD5xAV0YU99zampta7Z7S575KLkIZ9PYk"}
+
+
+3 手机端运行：可以看到app名还是app没变化，把房间名改成编码了
+HP-340-G3:~/Music$ ffmpeg -re -i 33bb.mp4 -c copy -f flv rtmp://192.168.0.109:1935/live/rfBd56ti2SMtYvSgD5xAV0YU99zampta7Z7S575KLkIZ9PYk
+
+
 [中文](./README_cn.md)
 
 [![Test](https://github.com/gwuhaolin/livego/workflows/Test/badge.svg)](https://github.com/gwuhaolin/livego/actions?query=workflow%3ATest)
