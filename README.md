@@ -17,6 +17,16 @@ HP-340-G3:~/Music$ ffmpeg -re -i 33bb.mp4 -c copy -f flv rtmp://192.168.0.109:19
 http://192.168.0.109:7002/live/xiazemin.m3u8
 http://192.168.0.109:7001/live/xiazemin.flv
 
+​
+
+rtmp://192.168.0.109:1935/live/xiazemin http://192.168.0.109:7002/live/xiazemin.m3u8 
+
+
+
+ffplay -fflags nobuffer -analyzeduration 500000  -i rtmp://192.168.0.109:1935/live/xiazemin
+
+​
+
 [中文](./README_cn.md)
 
 [![Test](https://github.com/gwuhaolin/livego/workflows/Test/badge.svg)](https://github.com/gwuhaolin/livego/actions?query=workflow%3ATest)
